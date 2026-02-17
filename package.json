@@ -1,0 +1,13 @@
+{
+  "name": "proxy-app",
+  "version": "1.0.0",
+  "description": "Proxy simple para verificar links",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2",
+    "express": "^4.18.2"
+  }
+}
