@@ -10,8 +10,9 @@ export default async function handler(req, res) {
     const data = await response.text();
 
     res.setHeader("Access-Control-Allow-Origin", "*");
-    res.send(data);
+    res.status(200).send(data);
   } catch (error) {
-    res.status(500).json({ error: "Error al conectar con el destino" });
+    res.status(500).json({ error: "Error al conectar con el destino", detail: error.message });
   }
 }
+
